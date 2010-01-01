@@ -1,0 +1,32 @@
+opRichTextareaSyntaxHighlightPlugin is a code syntax highlight plugin for OpenPNE3,
+using SyntaxHighlighter the well-known highlighter developed in JavaScript.
+
+LICENSE
+-------
+
+See LICENSE file
+
+INSTALLATION
+------------
+
+1. Put the source code in the OpenPNE's plugins directory
+2. Run ``php symfony plugin:publish-assets``
+3. Run ``php symfony cc``
+
+USAGE
+-----
+
+Write ``<op:source>`` tag in the rich textarea with the "lang" attribute.
+
+ex::
+
+  <op:source lang="php">
+  function foo()
+  {
+    // it works!
+  }
+  </op:source>
+
+If you want to know the "lang" list, see the `SyntaxHighlighter / Brushes`_.
+
+.. _`SyntaxHighlighter / Brushes`: http://alexgorbatchev.com/wiki/SyntaxHighlighter:Brushes
