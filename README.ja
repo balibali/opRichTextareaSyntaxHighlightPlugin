@@ -1,0 +1,34 @@
+opRichTextareaSyntaxHighlightPlugin はコードのシンタックスハイライトを
+実現するための OpenPNE3 プラグインです。
+
+JavaScript で書かれた有名なライブラリ SyntaxHighlighter を利用しています。
+
+ライセンス
+----------
+
+LICENSE ファイルをご覧ください。
+
+インストール
+------------
+
+1. ソースコードを OpenPNE の plugins ディレクトリに設置します
+2. コマンドラインから ``php symfony plugin:publish-assets`` を実行します
+3. コマンドラインから ``php symfony cc`` を実行します
+
+使い方
+------
+
+``<op:source>`` タグ lang 属性付きでリッチテキストエリアに入力します。
+
+例::
+
+  <op:source lang="php">
+  function foo()
+  {
+    // it works!
+  }
+  </op:source>
+
+対応している lang のリストを見たい場合は、`SyntaxHighlighter / Brushes`_ を参照してください。
+
+.. _`SyntaxHighlighter / Brushes`: http://alexgorbatchev.com/wiki/SyntaxHighlighter:Brushes
