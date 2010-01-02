@@ -103,18 +103,24 @@ class opRichTextareaSyntaxHighlightExtension extends opWidgetFormRichTextareaOpe
 
   static protected function load()
   {
-    $response = sfContext::getInstance()->getResponse();
-
-    $response->addJavascript('/opRichTextareaSyntaxHighlightPlugin/syntaxhighlighter/src/shCore');
-    $response->addJavascript('/opRichTextareaSyntaxHighlightPlugin/js/init');
-    $response->addStylesheet('/opRichTextareaSyntaxHighlightPlugin/syntaxhighlighter/styles/shCore');
-    $response->addStylesheet('/opRichTextareaSyntaxHighlightPlugin/syntaxhighlighter/styles/shThemeDefault');
+    self::addJavascript('syntaxhighlighter/src/shCore');
+    self::addJavascript('js/init');
+    self::addStylesheet('syntaxhighlighter/styles/shCore');
+    self::addStylesheet('syntaxhighlighter/styles/shThemeDefault');
   }
 
   static protected function loadBrush($alias)
   {
-    $response = sfContext::getInstance()->getResponse();
+    self::addJavascript('syntaxhighlighter/scripts/shBrush'.self::$brushAliases[$alias]);
+  }
 
-    $response->addJavascript('/opRichTextareaSyntaxHighlightPlugin/syntaxhighlighter/scripts/shBrush'.self::$brushAliases[$alias]);
+  static protected function addJavascript($path)
+  {
+    sfContext::getInstance()->getResponse()->addJavascript('/opRichTextareaSyntaxHighlightPlugin/'.$path);
+  }
+
+  static protected function addStylesheet($path)
+  {
+    sfContext::getInstance()->getResponse()->addStylesheet('/opRichTextareaSyntaxHighlightPlugin/'.$path);
   }
 }
