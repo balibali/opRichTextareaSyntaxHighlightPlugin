@@ -1,5 +1,5 @@
 opRichTextareaSyntaxHighlightPlugin is a code syntax highlight plugin for OpenPNE3,
-using SyntaxHighlighter the well-known highlighter developed in JavaScript.
+using SyntaxHighlighter a well-known highlighter developed in JavaScript.
 
 LICENSE
 -------
