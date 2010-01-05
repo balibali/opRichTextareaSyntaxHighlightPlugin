@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>opRichTextareaSyntaxHighlightPlugin</name>
+ <channel>plugins.openpne.jp</channel>
+ <summary>Code syntax highlight plugin</summary>
+ <description>opRichTextareaSyntaxHighlightPlugin is a code syntax highlight plugin for OpenPNE3, using SyntaxHighlighter a well-known highlighter developed in JavaScript.</description>
+ <lead>
+  <name>Rimpei Ogawa</name>
+  <user>ogawa</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2010-01-05</date>
+ <time>17:46:57</time>
+ <version>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license>apache</license>
+ <notes>add button</notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="aeefcb5a3251e487c736ddddf2ee1952" name="config/config.php" role="data" />
+   <file baseinstalldir="/" md5sum="87f39366a0c06dd7929cb6b53b652d35" name="lib/widget/opRichTextareaSyntaxHighlightExtension.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="9878eaf4da4c2d3b84fe1e9b1e0898f7" name="web/images/deco_op_source.gif" role="data" />
+   <file baseinstalldir="/" md5sum="f1baa2c3490b02a54656d30156bcac9a" name="web/js/init.js" role="data" />
+   <file baseinstalldir="/" md5sum="3a77bd181e9712ec941ff2a7e5c02038" name="web/js/tiny_mce/decoration.js" role="data" />
+   <file baseinstalldir="/" md5sum="f5778997e0a9d0069e68e916861d54b1" name="web/js/tiny_mce/editor_plugin.js" role="data" />
+   <file baseinstalldir="/" md5sum="e971c772b2df839298a8f8f9451f1eda" name="web/syntaxhighlighter/scripts/clipboard.swf" role="data" />
+   <file baseinstalldir="/" md5sum="40acb3622b561860abbe4b91a862de9f" name="web/syntaxhighlighter/scripts/shBrushAS3.js" role="data" />
+   <file baseinstalldir="/" md5sum="75a008836df6202da68465bece81b6ec" name="web/syntaxhighlighter/scripts/shBrushBash.js" role="data" />
+   <file baseinstalldir="/" md5sum="92a16519c82b3a2c50f72ba7ed416d01" name="web/syntaxhighlighter/scripts/shBrushColdFusion.js" role="data" />
+   <file baseinstalldir="/" md5sum="b2042554ed69ad234c57910e46e15284" name="web/syntaxhighlighter/scripts/shBrushCpp.js" role="data" />
+   <file baseinstalldir="/" md5sum="0414fd39941c2ae8da1a3f940c5fcbe0" name="web/syntaxhighlighter/scripts/shBrushCSharp.js" role="data" />
+   <file baseinstalldir="/" md5sum="aba9c9560ffbce23e3aaebaf5adefeb6" name="web/syntaxhighlighter/scripts/shBrushCss.js" role="data" />
+   <file baseinstalldir="/" md5sum="e6e3095599206a5cdd6a919ee876fd5c" name="web/syntaxhighlighter/scripts/shBrushDelphi.js" role="data" />
+   <file baseinstalldir="/" md5sum="455703d86fb1eabc6e37d6de8e5c190c" name="web/syntaxhighlighter/scripts/shBrushDiff.js" role="data" />
+   <file baseinstalldir="/" md5sum="2009efe6c602a99b76f9c725f9b2df17" name="web/syntaxhighlighter/scripts/shBrushErlang.js" role="data" />
+   <file baseinstalldir="/" md5sum="00e4cbd52c50ad610175bbf267de60d4" name="web/syntaxhighlighter/scripts/shBrushGroovy.js" role="data" />
+   <file baseinstalldir="/" md5sum="8ed774ae369cdbaceab952f8607debcc" name="web/syntaxhighlighter/scripts/shBrushJava.js" role="data" />
+   <file baseinstalldir="/" md5sum="65159a9ed02b24aec0b77c5f037699a0" name="web/syntaxhighlighter/scripts/shBrushJavaFX.js" role="data" />
+   <file baseinstalldir="/" md5sum="4cb20668b9ec2d5213f55f65ba8850ea" name="web/syntaxhighlighter/scripts/shBrushJScript.js" role="data" />
+   <file baseinstalldir="/" md5sum="8b97f5765de0ccf09623ed58acb90a2b" name="web/syntaxhighlighter/scripts/shBrushPerl.js" role="data" />
+   <file baseinstalldir="/" md5sum="5b74062e54f0b7ddd968073d1b105a9b" name="web/syntaxhighlighter/scripts/shBrushPhp.js" role="data" />
+   <file baseinstalldir="/" md5sum="a713ee68aff0219c643467e9b6b61eff" name="web/syntaxhighlighter/scripts/shBrushPlain.js" role="data" />
+   <file baseinstalldir="/" md5sum="47e8a820a384d8d875a8f58b22909d06" name="web/syntaxhighlighter/scripts/shBrushPowerShell.js" role="data" />
+   <file baseinstalldir="/" md5sum="422fb2c03119f64d1965c9d9d02bb3c4" name="web/syntaxhighlighter/scripts/shBrushPython.js" role="data" />
+   <file baseinstalldir="/" md5sum="863661d03acafe75d7b6be7b3554a740" name="web/syntaxhighlighter/scripts/shBrushRuby.js" role="data" />
+   <file baseinstalldir="/" md5sum="bb0eac424b654978a0c454ca5a15ece3" name="web/syntaxhighlighter/scripts/shBrushScala.js" role="data" />
+   <file baseinstalldir="/" md5sum="9db6cff1ccb457970e0ae1dc0b651df2" name="web/syntaxhighlighter/scripts/shBrushSql.js" role="data" />
+   <file baseinstalldir="/" md5sum="e59df9690ff9ebaa0c834851f4526492" name="web/syntaxhighlighter/scripts/shBrushVb.js" role="data" />
+   <file baseinstalldir="/" md5sum="c8fc2b53b0a6bd913c8a5c04a2b9cc3a" name="web/syntaxhighlighter/scripts/shBrushXml.js" role="data" />
+   <file baseinstalldir="/" md5sum="88c9a0d2dba6b31130637548b59cbb61" name="web/syntaxhighlighter/scripts/shCore.js" role="data" />
+   <file baseinstalldir="/" md5sum="ad4f5ab33e4c5492c092533dc55473be" name="web/syntaxhighlighter/scripts/shLegacy.js" role="data" />
+   <file baseinstalldir="/" md5sum="8e09ac81cfcc323be78c6f05b4cc4888" name="web/syntaxhighlighter/src/shCore.js" role="data" />
+   <file baseinstalldir="/" md5sum="0bddf04301fedd34b0090e5874083c4b" name="web/syntaxhighlighter/src/shLegacy.js" role="data" />
+   <file baseinstalldir="/" md5sum="c3812c74bc524179f4ccf5d2db7b3cbf" name="web/syntaxhighlighter/styles/help.png" role="data" />
+   <file baseinstalldir="/" md5sum="a81fa78d754fae7b3a71026356e3ee27" name="web/syntaxhighlighter/styles/magnifier.png" role="data" />
+   <file baseinstalldir="/" md5sum="c65fadae5a0fc27f401f1a00e66f518f" name="web/syntaxhighlighter/styles/page_white_code.png" role="data" />
+   <file baseinstalldir="/" md5sum="38de59d96ecaa147d8b5f440b4c4b0e6" name="web/syntaxhighlighter/styles/page_white_copy.png" role="data" />
+   <file baseinstalldir="/" md5sum="242421c98dbd8b054fc76a036d04321c" name="web/syntaxhighlighter/styles/printer.png" role="data" />
+   <file baseinstalldir="/" md5sum="d698f69db1d9c6d17d8bbce94cdaec5b" name="web/syntaxhighlighter/styles/shCore.css" role="data" />
+   <file baseinstalldir="/" md5sum="cfa0f1cb8ca409a97f1cdb72ecbc7db0" name="web/syntaxhighlighter/styles/shThemeDefault.css" role="data" />
+   <file baseinstalldir="/" md5sum="f33a6c2248e753f650b02a63f11fdcab" name="web/syntaxhighlighter/styles/shThemeDjango.css" role="data" />
+   <file baseinstalldir="/" md5sum="c3819e7ae013790848bdb30816da78a8" name="web/syntaxhighlighter/styles/shThemeEclipse.css" role="data" />
+   <file baseinstalldir="/" md5sum="de9345c3c565fb35b811ee355a6a1ba2" name="web/syntaxhighlighter/styles/shThemeEmacs.css" role="data" />
+   <file baseinstalldir="/" md5sum="a43b67d9c83f225cfbc50e02642cce8e" name="web/syntaxhighlighter/styles/shThemeFadeToGrey.css" role="data" />
+   <file baseinstalldir="/" md5sum="b5e6e9aa2530d4cbbc1662abcff854ce" name="web/syntaxhighlighter/styles/shThemeMidnight.css" role="data" />
+   <file baseinstalldir="/" md5sum="99db167282880ccafaeb3987fa3e1bd8" name="web/syntaxhighlighter/styles/shThemeRDark.css" role="data" />
+   <file baseinstalldir="/" md5sum="3b83ef96387f14655fc854ddc3c6bd57" name="LICENSE" role="data" />
+   <file baseinstalldir="/" md5sum="0f4861746b3368cb8154e3fc7595e946" name="NOTICE" role="data" />
+   <file baseinstalldir="/" md5sum="05c548a5a50ffeaca4fb501f30303274" name="README" role="data" />
+   <file baseinstalldir="/" md5sum="b428c3abdb9d397606a8461627a96e3e" name="README.ja" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.2.0</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-01-05</date>
+   <license>apache</license>
+   <notes>add button</notes>
+  </release>
+ </changelog>
+</package>
