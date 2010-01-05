@@ -66,6 +66,30 @@ class opRichTextareaSyntaxHighlightExtension extends opWidgetFormRichTextareaOpe
     'html'          => 'Xml',
   );
 
+  static public function configure(&$configs)
+  {
+    self::addJavascript('js/tiny_mce/decoration');
+  }
+
+  static public function getPlugins()
+  {
+    return array('opSyntaxHighlight' => javascript_path('/opRichTextareaSyntaxHighlightPlugin/js/tiny_mce/editor_plugin'));
+  }
+
+  static public function getButtons()
+  {
+    return array(
+      'op_source' => array(
+        'caption' => 'Source code',
+        'imageURL' => image_path('/opRichTextareaSyntaxHighlightPlugin/images/deco_op_source.gif'),
+      ));
+  }
+
+  static public function getButtonOnClickActions()
+  {
+    return array('op_source' => 'op_mce_insert_tagname_block("%id%", "op:source", \' lang=""\');');
+  }
+
   static public function getConvertCallbacks()
   {
     return array('op:source' => array(__CLASS__, 'toHtml'));
